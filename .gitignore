@@ -1,0 +1,64 @@
+# ── Python ────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+*.whl
+
+# ── Virtual environments ──────────────────────────────
+.env
+.venv
+venv/
+env/
+ENV/
+
+# ── Data (large — use DVC or Kaggle CLI) ─────────────
+data/raw/TRAIN/
+data/raw/TEST/
+data/raw/VAL/
+data/processed/
+data/augmented/
+# keep placeholder
+!data/raw/.gitkeep
+!data/raw/TRAIN/.gitkeep
+!data/raw/TEST/.gitkeep
+
+# ── Model checkpoints (large) ────────────────────────
+models/checkpoints/*.pth
+models/checkpoints/*.pt
+models/exports/
+# keep placeholder
+!models/checkpoints/.gitkeep
+
+# ── Outputs & logs ────────────────────────────────────
+results/plots/
+runs/
+*.log
+!results/.gitkeep
+!runs/.gitkeep
+
+# ── Jupyter ───────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── IDE ───────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS ────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Testing / coverage ────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
